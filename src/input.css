@@ -1,0 +1,7 @@
+
+@import "tailwindcss";
+@layer components {
+    .biga{  
+    @apply text-2xl text-red-900 pr-1.5 border-red-700;
+}
+}

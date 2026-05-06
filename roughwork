@@ -1,0 +1,88 @@
+<div class="container-fluid text-center text-light mb-5" style="background-color: red;overflow: hidden;">
+      <div class="row">
+        <!----image col-->
+        <div class="col col-12 col-md-8 p-5"style="border:3px solid red;">
+          <img
+            src="./img/piyush-haswani-gAVIw1zs1fU-unsplash.jpg"
+            alt=""
+            class="img-fluid"
+            style="width: 64px; height: 64px; object-fit: cover"
+          />
+        </div>
+        <!-- text-col -->
+        <div class="col text-col col-12 col-md-4  text-center" style="">
+          <!-- texts -->
+          <div class="title ">
+            <p class="display-2 fw-3 -mt-5 mb-5"style="border:3px solid white"></p>
+              Fashion House <br />
+              Chose the best one.
+            </p>
+          </div>
+          <div class="body ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur, repudiandae?
+          </div>
+         
+        </div>
+        <!-- img-col -->
+      </div>
+    </div>
+
+
+
+    <div class="flex gap-6 p-6">
+  
+  <div class="flex-1 bg-blue-200 p-6 rounded">
+    Column 1
+  </div>
+
+  <div class="flex-1 bg-green-200 p-6 rounded">
+    Column 2
+  </div>
+
+</div>
+<footer class="bg-white text-black">
+ 
+<h1 class="text-center text-3xl">sponsored by our partners</h1>
+  <div class="w-100% mx-auto px-3 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-2">
+     
+
+    <!-- Column 1 -->
+    <div>
+      <h3 class="text-black font-bold mb-4"><i class="fa-brands fa-suse"></i>Transistor</h3>
+     
+    </div>
+
+    <!-- Column 2 -->
+    <div>
+      <h3 class="text-black font-bold mb-4"><i class="fa-solid fa-file-waveform"></i>Reform</h3>
+      
+    </div>
+
+    <!-- Column 3 -->
+    <div>
+      <h3 class="text-black font-bold mb-4"><i class="fa-solid fa-stapler"></i>tuple</h3>
+      
+    </div>
+
+    <!-- Column 4 -->
+    <div>
+      <h3 class="text-black font-bold mb-4"><i class="fa-solid fa-calculator"></i>savvycal</h3>
+      
+    </div>
+
+    <!-- Column 5 -->
+    <div>
+      <h3 class="text-black font-bold mb-4"><i class="fa-solid fa-camera"></i>statamic</h3>
+     
+      </div>
+    
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="border-t border-gray-700 text-center py-4 text-sm">
+    © 2026 Your Company. All rights reserved.
+  </div>
+
+</footer>

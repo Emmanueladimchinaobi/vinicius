@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  
+  
+ 
+  <!-- Font Awesome Free CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+<body class="bg-white">
+  <!------nav menu-->
+  <nav class="bg-white shadow-md">
+  <div class="max-w-7xl mx-auto px-6">
+    
+    <div class="flex justify-between items-center h-16">
+      
+      <!-- Logo -->
+      <div class="text-xl font-bold text-gray-800">
+        Wear shoes
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-8 items-center">
+        <a href="#" class="text-gray-600 hover:text-black"><i class="fa-solid fa-house-user"></i>Home</a>
+        <a href="#" class="text-gray-600 hover:text-black"><i class="fa-solid fa-object-group"></i>Collections</a>
+        <a href="#" class="text-gray-600 hover:text-black"><i class="fa-brands fa-microsoft"></i>Featured</a>
+        <a href="#" class="text-gray-600 hover:text-black"><i class="fa-solid fa-shop-lock"></i>shop</a>
+
+       
+      </div>
+
+      <!-- Hamburger Button -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="flex flex-col space-y-1">
+          <span class="w-6 h-0.5 bg-black"></span>
+          <span class="w-6 h-0.5 bg-black"></span>
+          <span class="w-6 h-0.5 bg-black"></span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="menu" class="hidden md:hidden px-6 pb-4">
+    <a href="#" class="block py-2 text-gray-600"><i class="fa-solid fa-house-user"></i>Home</a>
+    <a href="#" class="block py-2 text-gray-600"><i class="fa-solid fa-object-group"></i>collections</a>
+    <a href="#" class="block py-2 text-gray-600"><i class="fa-brands fa-microsoft"></i>featured</a>
+    <a href="#" class="block py-2 text-gray-600"><i class="fa-solid fa-shop-lock"></i>shop</a>
+
+  
+  </div>
+</nav>
+<!-----hero container-->
+<div 
+  class="h-screen bg-cover bg-center relative flex items-center justify-center mb-5"
+  style="background-image: url('./img/jeff-tumale-SD9Jyl1xNQ4-unsplash.jpg');">
+  <div class="text-center text-white">
+    <h1 class="text-4xl font-bold mb-4">Wear Shoes Collections</h1>
+  <p >Elevate your style with our premium,high quality <br>shoes.crafted for comfort and fasion.</p>
+  <h4 >Available in all sizes and colors</h4>
+  <a href=""><button class="bg-black text-white px-2 py-2 rounded cursor-pointer">
+  order now
+</button></a>
+</div>
+</div>
+<!---collections---->
+<div class="text-center mb-3">
+  <h1 class="text-5xl bold">collections</h1>
+  <p>Discover our curated selection of premium footwear </p>
+</div>
+<!------cards---->
+<div class="w-100% mx-auto px-6 py-12">
+  
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+    
+    <!-- Card 1 -->
+    <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300 relative overflow-hidden">
+       <!-- Price badge -->
+      <span class="absolute top- left- bg-black text-white text-sm px-3 py-1 rounded-md shadow">
+        $50
+      </span>
+      <img src="./img/paul-gaudriault-a-QH9MAAVNI-unsplash.jpg" class="w-full h-40 object-cover">
+      
+     <h3 class="text-lg text-center font-semibold mb-2">puma tracker</h3>
+        
+        
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300  overflow-hidden">
+       <!-- Price badge -->
+      <span class="absolute top- left- bg-black text-white text-sm px-3 py-1 rounded-md shadow">
+        $70
+      </span>
+      <img src="./img/ryan-plomp-jvoZ-Aux9aw-unsplash.jpg" class="w-full h-40 object-cover">
+     
+        <h3 class="text-lg font-semibold mb-2 text-center">Nike Air</h3>
+        
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300 overflow-hidden">
+       <!-- Price badge -->
+      <span class="absolute top- left- bg-black text-white text-sm px-3 py-1 rounded-md shadow">
+        $50
+      </span>
+      <img src="./img/ryan-waring-164_6wVEHfI-unsplash.jpg" class="w-full h-40 object-cover">
+      
+        <h3 class="text-lg font-semibold mb-2 text-center">jogging nike</h3>
+        
+      
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300  overflow-hidden">
+       <!-- Price badge -->
+      <span class="absolute top- left- bg-black text-white text-sm px-3 py-1 rounded-md shadow">
+        $30
+      </span>
+      <img src="./img/usama-akram-kP6knT7tjn4-unsplash.jpg" class="w-full h-40 object-cover">
+      
+        <h3 class="text-lg  text-center font-semibold mb-2">Nike shark</h3>
+        
+    
+    </div>
+
+    <!-- Card 5 -->
+    <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300 overflow-hidden">
+       <!-- Price badge -->
+      <span class="absolute top left bg-black text-white text-sm px-3 py-1 rounded-md shadow">
+        $120
+      </span>
+      <img src="./img/xavier-teo-SxAXphIPWeg-unsplash.jpg" class="w-full h-40 object-cover">
+      
+        <h3 class="text-lg text-center font-semibold mb-2">Air jordan 4</h3>
+        
+    </div>
+
+  </div>
+
+</div>
+<!------prcing description-->
+<div class="flex items-center justify-center gap-4 mb-5">
+
+   <!-- LEFT: Image -->
+<div class="flex-1 p-4 ">
+  <span class=" absolute top- left-  bg-red-600 text-black text-3xl px-3 py-1 rounded-md shadow text-center">
+        50% <br>limited time
+      </span>
+  <img
+            src="./img/piyush-haswani-gAVIw1zs1fU-unsplash.jpg"
+            alt=""
+            class="img-fluid "
+            style="width: 500px; height: 500px; object-fit: cover"
+          />
+</div>
+   
+    
+
+    <!-- RIGHT: Content -->
+    <div class="flex-1 p-4">
+      <h1 class="text-5xl font-bold mb-4">NIKE AIR JORDAN 13 <BR>RETRO</h1>
+      <p class="text-gray-500 mb-4">
+        Classic style meets unbeatable comfort. Perfect for everyday wear
+      </p>
+      <p>$60
+$120
+Save $60 instantly! Stock limited.</p>
+      <button class="bg-black text-white px-6 py-3 rounded cursor-pointer">
+        GRAB YOURS (ONLY FEW LEFT)
+      </button>
+    </div>
+
+</div>
+<!------sponsorship-->
+<div class="w-100% mx-auto px-6 py-12 mb-5">
+  
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+    
+    <!-- Card 1 -->
+    <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300 relative overflow-hidden">
+       
+     
+      
+     <h3 class="text-4xl text-center font-semibold mb-2"><i class="fa-brands fa-suse"></i>Transistor</h3>
+        
+        
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300  overflow-hidden">
+     
+     
+        <h3 class="text-4xl font-semibold mb-2 text-center"><i class="fa-solid fa-file-waveform"></i>Reform</h3>
+        
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300 overflow-hidden">
+   
+      
+        <h3 class="text-4xl font-semibold mb-2 text-center"><i class="fa-solid fa-stapler"></i>tuple</h3>
+        
+      
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300  overflow-hidden">
+     
+      
+        <h3 class="text-4xl  text-center font-semibold mb-2"><i class="fa-solid fa-calculator"></i>savvycal</h3>
+        
+    
+    </div>
+
+    <!-- Card 5 -->
+    <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300 overflow-hidden">
+      
+      
+        <h3 class=" text-4xl text-center font-semibold mb-2"><i class="fa-solid fa-camera"></i>statamic</h3>
+        
+    </div>
+
+  </div>
+
+</div>
+<footer class="bg-gray-100 border-t-2 border-gray-400 shadow-2xl ">
+
+  <div class="text-center py-6 text-gray-600 font-mono">
+    @chimnaonuel  2026 Tailwind Project
+  </div>
+
+</footer>
+
+
+     <script src="./javascript"></script>
+
+ 
+
+
+
+</body>
+</html>
