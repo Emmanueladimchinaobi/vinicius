@@ -25,14 +25,26 @@
       </div>
 
       <!-- Desktop Menu -->
-      <div class="hidden md:flex space-x-8 items-center">
-        <a href="#" class="text-gray-600 hover:text-black"><i class="fa-solid fa-house-user"></i>Home</a>
-        <a href="#" class="text-gray-600 hover:text-black"><i class="fa-solid fa-object-group"></i>Collections</a>
-        <a href="#" class="text-gray-600 hover:text-black"><i class="fa-brands fa-microsoft"></i>Featured</a>
-        <a href="#" class="text-gray-600 hover:text-black"><i class="fa-solid fa-shop-lock"></i>shop</a>
-
+      <div class="hidden md:flex  space-x-8 items-center">
+      <div class="flex space-x-2">
+        <span><i class="fa-solid fa-house-user"></i></span>
+         <span><a href="#" class="text-gray-600 hover:text-black">Home</a></span> </div>
+         <div class="flex space-x-2">
+          <span><i class="fa-solid fa-object-group"></i></span>
+        <span><a href="#" class="text-gray-600 hover:text-black">Featured</a></span>
+        </div>
+       <div class="flex space-x-2"><span><i class="fa-brands fa-microsoft"></i></span> 
+        <span><a href="#" class="text-gray-600 hover:text-black">Collections</a></span></div>
+        
+        
+       <div class="flex space-x-2"> <span><i class="fa-solid fa-shop-lock"></i></span>
+      <span><a href="#" class="text-gray-600 hover:text-black">shop</a></span></div> 
+       
+        
        
       </div>
+       
+     
 
       <!-- Hamburger Button -->
       <div class="md:hidden">
@@ -48,23 +60,31 @@
 
   <!-- Mobile Menu -->
   <div id="menu" class="hidden md:hidden px-6 pb-4">
-    <a href="#" class="block py-2 text-gray-600"><i class="fa-solid fa-house-user"></i>Home</a>
-    <a href="#" class="block py-2 text-gray-600"><i class="fa-solid fa-object-group"></i>collections</a>
-    <a href="#" class="block py-2 text-gray-600"><i class="fa-brands fa-microsoft"></i>featured</a>
-    <a href="#" class="block py-2 text-gray-600"><i class="fa-solid fa-shop-lock"></i>shop</a>
-
-  
+    <div class="flex space-x-2">
+      <span><i class="fa-solid fa-house-user"></i></span>
+       <span> <a href="#" class="block  text-gray-600">Home</a></span></div>
+   <div class="flex space-x-2"><span><i class="fa-solid fa-object-group"></i></span>
+  <span> <a href="#" class="block  text-gray-600">collections</a></span></div>
+   
+     <div class="flex space-x-2"> <span><i class="fa-brands fa-microsoft"></i></span>
+      <span><a href="#" class="block  text-gray-600">featured</a></span></div>
+      <div class=" flex space-x-2"><span><i class="fa-solid fa-shop-lock"></i></span>
+         <span> <a href="#" class="block  text-gray-600">shop</a></span></div>
+   
+   
   </div>
+  
+   
 </nav>
 <!-----hero container-->
 <div 
-  class="h-screen bg-cover bg-center relative flex items-center justify-center mb-5"
-  style="background-image: url('./img/jeff-tumale-SD9Jyl1xNQ4-unsplash.jpg');">
+  class="h-screen bg-[url('/img/jeff-tumale-SD9Jyl1xNQ4-unsplash.jpg')] bg-cover bg-center relative flex items-center justify-center mb-5"
+  >
   <div class="text-center text-white">
     <h1 class="text-4xl font-bold mb-4">Wear Shoes Collections</h1>
   <p >Elevate your style with our premium,high quality <br>shoes.crafted for comfort and fasion.</p>
   <h4 >Available in all sizes and colors</h4>
-  <a href=""><button class="bg-black text-white px-2 py-2 rounded cursor-pointer">
+  <a href="" ><button class="bg-black text-white px-4 py-2 rounded-2xl cursor-pointer hover:bg-white hover:text-black">
   order now
 </button></a>
 </div>
@@ -146,19 +166,19 @@
 
 </div>
 <!------prcing description-->
-<div class="flex items-center justify-center gap-4 mb-5">
+<div class="flex  flex-col md:flex-row items-center justify-center gap-4 mb-5">
 
    <!-- LEFT: Image -->
 <div class="flex-1 p-4 ">
-  <span class=" absolute top- left-  bg-red-600 text-black text-3xl px-3 py-1 rounded-md shadow text-center">
-        50% <br>limited time
-      </span>
-  <img
+ 
+ <div class="relative"> <img
             src="./img/piyush-haswani-gAVIw1zs1fU-unsplash.jpg"
             alt=""
-            class="img-fluid "
-            style="width: 500px; height: 500px; object-fit: cover"
-          />
+            class="h-full w-full "  
+          />  <h1 class=" absolute top-2 left-6  bg-red-600 text-black text-sm px-2 py-1 rounded-md shadow text-center">
+        50% <br>limited time
+ </h1></div>
+ 
 </div>
    
     
@@ -190,7 +210,7 @@
   </p>
 
 </div>
-      <button class="bg-black text-white px-6 py-3 rounded cursor-pointer">
+      <button class="bg-black text-white px-6 py-3 rounded-2xl hover:bg-white hover:text-black cursor-pointer">
         GRAB YOURS (ONLY FEW LEFT)
       </button>
     </div>
@@ -204,26 +224,37 @@
     <!-- Card 1 -->
     <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300 relative overflow-hidden">
        
-     
+     <div class="flex space-x-2">
+      <span class="text-2xl font-semibold"><i class="fa-brands fa-suse"></i></span>
+      <span><h3 class="font-semibold text-2xl">Transistor</h3></span>
+     </div>
       
-     <h3 class="text-4xl text-center font-semibold mb-2"><i class="fa-brands fa-suse"></i>Transistor</h3>
+     
         
         
     </div>
 
     <!-- Card 2 -->
     <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300  overflow-hidden">
+
+      <div class="flex space-x-2">
+      <span class="text-2xl font-semibold"><i class="fa-solid fa-file-waveform"></i></span>
+      <span><h3 class="text-2xl font-semibold ">Reform</h3></span>
+     </div>
      
      
-        <h3 class="text-4xl font-semibold mb-2 text-center"><i class="fa-solid fa-file-waveform"></i>Reform</h3>
+        
         
     </div>
 
     <!-- Card 3 -->
     <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300 overflow-hidden">
    
-      
-        <h3 class="text-4xl font-semibold mb-2 text-center"><i class="fa-solid fa-stapler"></i>tuple</h3>
+      <div class="flex space-x-2">
+      <span class="text-2xl font-semibold"><i class="fa-solid fa-stapler"></i></span>
+      <span><h3 class="text-2xl font-semibold ">Tuple</h3></span>
+     </div>
+        
         
       
     </div>
@@ -231,8 +262,11 @@
     <!-- Card 4 -->
     <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300  overflow-hidden">
      
-      
-        <h3 class="text-4xl  text-center font-semibold mb-2"><i class="fa-solid fa-calculator"></i>savvycal</h3>
+      <div class="flex space-x-2">
+      <span class="text-2xl font-semibold"><i class="fa-solid fa-calculator"></i></span>
+      <span><h3 class="text-2xl font-semibold ">savvycal</h3></span>
+     </div>
+        
         
     
     </div>
@@ -240,8 +274,12 @@
     <!-- Card 5 -->
     <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300 overflow-hidden">
       
+      <div class="flex space-x-2">
+      <span class="text-2xl font-semibold"><i class="fa-solid fa-camera"></i></span>
+      <span><h3 class="text-2xl font-semibold ">statamic</h3></span>
+     </div>
       
-        <h3 class=" text-4xl text-center font-semibold mb-2"><i class="fa-solid fa-camera"></i>statamic</h3>
+       
         
     </div>
 
@@ -250,7 +288,7 @@
 </div>
 <footer class="bg-gray-100 border-t-2 border-gray-400 shadow-2xl ">
 
-  <div class="text-center py-6 text-gray-600 font-mono">
+  <div class="text-center py-6 text-gray-600 font-mono ">
     @chimnaonuel  2026 Tailwind Project
   </div>
 
