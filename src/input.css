@@ -5,3 +5,15 @@
     @apply text-2xl text-red-900 pr-1.5 border-red-700;
 }
 }
+
+@theme {
+    --animate-gentle:gentle 2s ease-in-out infinite;
+    @keyframes gentle{
+        0%,100%{
+            transform:scale(1);
+        }
+        50%{
+            transform:scale(1.08);
+        }
+    }
+};

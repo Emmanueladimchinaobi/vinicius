@@ -12,35 +12,74 @@
 
 
 </head>
-<body class="bg-white">
-  <!------nav menu-->
-  <nav class="bg-white shadow-md">
-  <div class="max-w-7xl mx-auto px-6 border border-red-500">
+<body class="bg-white" style="font-family:'Times New Roman', Times, serif">
+   <nav class="bg-white shadow-md  fixed top-0 z-50 w-full pb-2 pt-2">
+  <div class="max-w-7xl mx-auto px-6 ">
     
     <div class="flex justify-between items-center h-16">
       
       <!-- Logo -->
-      <div class="text-xl font-bold text-gray-800">
-        Wear shoes
+      <div class="text-xl font-bold text-gray-800"
+       style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+       choice botique
       </div>
+ <div><a href="./cart.html" class="relative text-3xl">
 
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span id="cart-count"
+        class="absolute -top-2 -right-3 bg-red-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+
+        0
+
+        </span>
+
+    </a></div>
+       
       <!-- Desktop Menu -->
       <div class="hidden md:flex  space-x-8 items-center">
-      <div class="flex space-x-2">
-        <span><i class="fa-solid fa-house-user"></i></span>
-         <span><a href="#" class="text-gray-600 hover:text-black">Home</a></span> </div>
-         <div class="flex space-x-2">
-          <span><i class="fa-solid fa-object-group"></i></span>
-        <span><a href="#" class="text-gray-600 hover:text-black">Featured</a></span>
+     <div class="">
+        
+         <a href="./index.html" class="text-gray-600 hover:text-black"  
+           style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" >
+           <span><i class="fa-solid fa-house-user"></i></span> Home</a> </div>
+         <div class="relative" ><button id="botique-btn2" class=""
+    style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+  <span><i class="fa-solid fa-shop-lock"></i></span>
+      <span><a href="#" class="text-gray-600 hover:text-black">shop</a></span> <i id="arrow2" class="fa-solid fa-angle-down transition-transform duration-300"></i>
+</button>
+<ul id="botique-menu2" class="  hidden absolute flex flex-col   w-75  top-8  h-auto  text-black   p-5 space-y-4 bg-white shadow-md">
+ 
+   <button class="rounded-2xl border border-black bg-white p-2 nav-link">
+    <a href="#footwear collections" >Footwear collections</a></button>
+ <button class="rounded-2xl border border-black bg-white p-2 nav-link"><a href="#shirt and jacket collections">
+  shirt and jacket collections
+  
+ </a> </button>
+ 
+  <button class="rounded-2xl border border-black bg-white p-2 nav-link"><a href="#jean trouser collections">
+   trouser collections
+  
+ </a> </button>
+  <button class="rounded-2xl border border-black bg-white p-2 nav-link"><a href="#Face cap collections">
+  Face cap collections
+  
+ </a> </button>
+ 
+</ul></div> 
+         <div class="">
+          
+        <span><a href="./faqs.html" class="text-gray-600 hover:text-black" 
+            style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+           <span><i class="fa-solid fa-object-group"></i></span> Faqs</a></span>
         </div>
        <div class="flex space-x-2"><span><i class="fa-brands fa-microsoft"></i></span> 
         <span><a href="#" class="text-gray-600 hover:text-black">Collections</a></span></div>
         
         
-       <div class="flex space-x-2"> <span><i class="fa-solid fa-shop-lock"></i></span>
-      <span><a href="#" class="text-gray-600 hover:text-black">shop</a></span></div> 
        
-        
+      
+       
        
       </div>
        
@@ -59,123 +98,1916 @@
   </div>
 
   <!-- Mobile Menu -->
-  <div id="menu" class="hidden md:hidden px-6 pb-4">
-    <div class="flex space-x-2">
-      <span><i class="fa-solid fa-house-user"></i></span>
-       <span> <a href="#" class="block  text-gray-600">Home</a></span></div>
+  <div id="menu" class="hidden md:hidden px-6 pb-4 z-50 h-auto ">
+    <div class="">
+        
+         <a href="./index.html" class="text-gray-600 hover:text-black"  
+           style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" >
+           <span><i class="fa-solid fa-house-user"></i></span> Home</a> </div>
    <div class="flex space-x-2"><span><i class="fa-solid fa-object-group"></i></span>
-  <span> <a href="#" class="block  text-gray-600">collections</a></span></div>
+  <span> <a href="#" class="block  text-gray-600 nav-link">collections</a></span></div>
    
-     <div class="flex space-x-2"> <span><i class="fa-brands fa-microsoft"></i></span>
-      <span><a href="#" class="block  text-gray-600">featured</a></span></div>
-      <div class=" flex space-x-2"><span><i class="fa-solid fa-shop-lock"></i></span>
-         <span> <a href="#" class="block  text-gray-600">shop</a></span></div>
-   
+<div class="">
+          
+        <span><a href="./faqs.html" class="text-gray-600 hover:text-black" 
+            style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+           <span><i class="fa-solid fa-object-group"></i></span> Faqs</a></span>
+        </div>
+      
+      <div class="relative" ><button id="botique-btn3" class=""
+    style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+  <span><i class="fa-solid fa-shop-lock"></i></span>
+      <span><a href="#" class="text-gray-600 hover:text-black">shop</a></span> <i id="arrow3" class="fa-solid fa-angle-down transition-transform duration-300"></i>
+</button>
+<ul id="botique-menu3" class="  hidden  flex flex-col   h-auto  text-black  z-50 pt-6
+ pb-4  space-y-4 bg-white ">
+ 
+ <button class="rounded-2xl border border-black bg-white p-2 nav-link">
+    <a href="#footwear collections" >Footwear collections</a></button>
+ <button class="rounded-2xl border border-black bg-white p-2 nav-link"><a href="#shirt and jacket collections">
+  shirt and jacket collections
+  
+ </a> </button>
+ 
+   <button class="rounded-2xl border border-black bg-white p-2 nav-link"><a href="#jean trouser collections">
+   trouser collections
+  
+ </a> </button>
+  <button class="rounded-2xl border border-black bg-white p-2 nav-link"><a href="#Face cap collections">
+  Face cap collections
+  
+ </a> </button>
+ 
+ 
+ 
+</ul></div>
    
   </div>
   
    
 </nav>
+ 
 <!-----hero container-->
 <div 
-  class="h-screen bg-[url('/img/jeff-tumale-SD9Jyl1xNQ4-unsplash.jpg')] bg-cover bg-center relative flex items-center justify-center mb-5"
+  class=" bg-[url('/img/jeff-tumale-SD9Jyl1xNQ4-unsplash.jpg')]
+   bg-cover h-screen bg-center relative flex items-center justify-center mb-5 w-full"
   >
   <div class="text-center text-white">
-    <h1 class="text-4xl font-bold mb-4">Wear Shoes Collections</h1>
-  <p >Elevate your style with our premium,high quality <br>shoes.crafted for comfort and fasion.</p>
-  <h4 class="mb-4" >Available in all sizes and colors</h4>
-  <a href="" ><button class="bg-black text-white px-6 py-4 rounded-2xl cursor-pointer hover:bg-white hover:text-black">
-  order now
-</button></a>
+    <h1 class="text-4xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      choice botique</h1>
+  <p class=" text-black "
+   style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" >Elevate your style with 
+   our premium,high quality <br>wears.crafted for comfort and fashion.</p>
+  <h4 class="mb-4" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Available in all sizes and colors</h4>
+  <div class="relative" ><button id="botique-btn" class="bg-black uppercase text-white px-6 py-4 rounded-2xl cursor-pointer hover:bg-white hover:text-black"
+    style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+  order now <i id="arrow" class="fa-solid fa-angle-down transition-transform duration-300"></i>
+</button>
+<div id="botique-menu" class=" px-6 py-4 hidden absolute inset-0 top-12 h-auto  text-black   ">
+ <ul class="space-y-2">
+   <button class="rounded-2xl border border-black bg-white p-2">
+    <a href="#footwear collections" >Footwear collections</a></button>
+ <button class="rounded-2xl border border-black bg-white p-2"><a href="#shirt and jacket collections">
+  shirt and jacket collections
+  
+ </a> </button>
+  <button class="rounded-2xl border border-black bg-white p-2"><a href="#jean trouser collections">
+  jean trouser collections
+  
+ </a> </button>
+  <button class="rounded-2xl border border-black bg-white p-2"><a href="#Face cap collections">
+  Face cap collections
+  
+ </a> </button>
+ </ul>
+ 
+ 
+</div></div>
+
 </div>
 </div>
+  <div class="text-center mb-3 pt-10" id="Face cap collections">
+  <h1 class="text-2xl bold uppercase"> Face cap collections</h1>
+  <p class="text-xs text-gray-500">Discover our curated selection of premium wears </p>
+</div>
+<!-----cards-->
+<div class="product-slider-section w-full">
+ <div class="max-w-7xl mx-auto px-6 relative">
+    <!-- LEFT ARROW -->
+        <button
+            
+            type="button"
+            class="absolute left-0 top-1/2 -translate-y-1/2
+                   text-5xl text-black prevBtn
+                   ">
+            ‹
+        </button>
+         <div class="overflow-hidden   transition-transform duration-100">
+          <div class="productSlider flex ">
+ <div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2
+     text-center min-w-[50%] w-1/2 product-card">
+      <img src="./img/download (53).jfif" alt="cap" class="w-full  max-w-md md:object-cover md:h-75 object-cover
+      mx-auto  rounded-2xl" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦8,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="L">Large</option>
+
+
+    <option value="M">Medium</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="1"
+                        data-name=""
+                        data-price="8000"
+                        data-image="img/download (53).jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+
+    <div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2 product-card
+     text-center min-w-[50%] w-1/2">
+      <img src="./img/download (54).jfif" alt="comfortable shirts" class="w-full   max-w-md md:object-cover md:h-75 object-cover
+      mx-auto  rounded-2xl" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦8,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="L">Large</option>
+
+    
+
+    <option value="M">Medium</option>
+
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="2"
+                        data-name=""
+                        data-price="8000"
+                        data-image="img/download (54).jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+
+<div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2 product-card
+     text-center min-w-[50%] w-1/2">
+      <img src="./img/download (55).jfif" alt="comfortable shirts"class="w-full  max-w-md md:object-cover md:h-75 object-cover
+      mx-auto  rounded-2xl" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦8,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="L">Large</option>
+
+    
+
+    <option value="M">Medium</option>
+
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="3"
+                        data-name=""
+                        data-price="8000"
+                        data-image="img/download (55).jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+    
+
+    
+
+<div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2 product-card
+     text-center min-w-[50%] w-1/2">
+      <img src="./img/download (56).jfif" alt="cap" class="w-full h-40 max-w-md md:object-contain md:h-75 object-cover
+      mx-auto  rounded-2xl"/>
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦10,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="L">Large</option>
+
+    
+
+    <option value="M">Medium</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="4"
+                        data-name=""
+                        data-price="10000"
+                        data-image="img/download (56).jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+
+<div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2 product-card
+     text-center min-w-[50%] w-1/2">
+      <img src="./img/1 baseball cap womens hat fashionable retro washed   - Temu.jfif" alt="comfortable shirts"class="w-full  max-w-md md:object-cover md:h-75 object-cover
+      mx-auto  rounded-2xl" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦8,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="L">Large</option>
+
+    
+
+    <option value="M">Medium</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id=""
+                        data-name=""
+                        data-price="8000"
+                        data-image="/img/1 baseball cap womens hat fashionable retro washed   - Temu.jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+    <div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2 product-card
+     text-center min-w-[50%] w-1/2">
+      <img src="./img/Fashion Diamond Hat Korean Version Trendy Versatile Full Diamond Baseball Cap For Spring Autumn.jfif" alt="comfortable shirts" class="w-full  max-w-md md:object-cover md:h-75 object-cover
+      mx-auto  rounded-2xl" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦8,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="L">Large</option>
+
+    
+
+    <option value="M">Medium</option>
+
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="5"
+                        data-name=""
+                        data-price="8000"
+                        data-image="img/Fashion Diamond Hat Korean Version Trendy Versatile Full Diamond Baseball Cap For Spring Autumn.jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+    <div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2 product-card
+     text-center min-w-[50%] w-1/2">
+      <img src="./img/Men's Baseball Cap, Spring And Summer Fashionable Hip Hop Cap, Sunshade Cap, Sunscreen Cap, Embroidered Pattern Sports H07.jfif" alt="comfortable shirts" class="w-full  max-w-md md:object-cover md:h-75 object-cover
+      mx-auto  rounded-2xl" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦8,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="L">Large</option>
+
+    
+
+    <option value="M">Medium</option>
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="6"
+                        data-name=""
+                        data-price="8000"
+                        data-image="img/Men's Baseball Cap, Spring And Summer Fashionable Hip Hop Cap, Sunshade Cap, Sunscreen Cap, Embroidered Pattern Sports H07.jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+    <div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2 product-card
+     text-center min-w-[50%] w-1/2">
+      <img src="./img/New Drops.jfif" class="w-full  max-w-md md:object-cover md:h-75 object-cover
+      mx-auto  rounded-2xl" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦8,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="L">Large</option>
+
+    
+
+    <option value="M">Medium</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="7"
+                        data-name=""
+                        data-price="8000"
+                        data-image="img/New Drops.jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+    <div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2 product-card
+     text-center min-w-[50%] w-1/2">
+      <img src="./img/Venom Cap from @uniz_lab.jfif" alt="comfortable shirts" class="w-full  max-w-md md:object-cover md:h-75 object-cover
+      mx-auto  rounded-2xl" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦8,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="L">Large</option>
+
+    
+
+    <option value="M">Medium</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="8"
+                        data-name=""
+                        data-price="8000"
+                        data-image="img/Venom Cap from @uniz_lab.jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+     <div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2 product-card
+     text-center min-w-[50%] w-1/2">
+      <img src="./img/Ya escorpion.jfif" alt="comfortable shirts" class="w-full  max-w-md md:object-cover md:h-75 object-cover
+      mx-auto  rounded-2xl" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦8,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="L">Large</option>
+
+    
+
+    <option value="M">Medium</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id=""
+                        data-name=""
+                        data-price="8000"
+                        data-image="img/Ya escorpion.jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+    </div>
+         </div>
+   
+     <!-- RIGHT ARROW -->
+        <button
+            
+            type="button"
+            class="absolute right-0 top-1/2 -translate-y-1/2
+                   text-5xl  nextBtn
+                   ">
+            ›
+        </button>
+  </div>
+  
+    <div class="sliderIndicators flex justify-center gap-2  mt-6
+    "></div>
+</div>
+ <!---collections---->
+<div class="text-center mb-3 pt-10" id="shirt and jacket collections">
+  <h1 class="text-2xl bold uppercase"> shirt and jacket collections</h1>
+  <p class="text-xs text-gray-500">Discover our curated selection of premium wears </p>
+</div>
+<!-----cards-->
+<div class="product-slider-section w-full">
+ <div class="max-w-7xl mx-auto px-6 relative">
+    <!-- LEFT ARROW -->
+        <button
+            
+            type="button"
+            class="absolute left-0 top-1/2 -translate-y-1/2
+                   text-5xl text-black prevBtn
+                   ">
+            ‹
+        </button>
+         <div class="overflow-hidden   transition-transform duration-100">
+          <div class="productSlider flex ">
+ <div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2
+     text-center min-w-[50%] w-1/2 product-card">
+      <img src="./img/download (58).jfif" alt="comfortable shirts"
+       class="w-full h-60   max-w-md md:object-contain md:h-75 object-contain
+      mx-auto  rounded-2xl" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦15,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="S">Small (S)</option>
+
+    <option value="M">Medium (M)</option>
+
+    <option value="L">Large (L)</option>
+
+    <option value="XL">Extra Large (XL)</option>
+
+    <option value="XXL">2XL</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="11"
+                        data-name=""
+                        data-price="15000"
+                        data-image="img/download (58).jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+
+    <div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2
+     text-center min-w-[50%] w-1/2 product-card">
+      <img src="./img/download (59).jfif" alt="comfortable shirts" 
+      class="w-full h-60  max-w-md md:object-cover md:h-75 object-cover
+      mx-auto  rounded-2xl" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦25,000</h1>
+      <div class="space-y-4 pt-6">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+     <option value="S">Small (S)</option>
+
+    <option value="M">Medium (M)</option>
+
+    <option value="L">Large (L)</option>
+
+    <option value="XL">Extra Large (XL)</option>
+
+    <option value="XXL">2XL</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="12"
+                        data-name=""
+                        data-price="25000"
+                        data-image="img/download (58).jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+
+<div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2
+     text-center min-w-[50%] w-1/2 product-card">
+      <img src="./img/Instagram.jfif" alt="comfortable shirts"class="w-full h-60  max-w-md md:object-cover md:h-75 object-cover
+      mx-auto  rounded-2xl" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦20,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+     <option value="S">Small (S)</option>
+
+    <option value="M">Medium (M)</option>
+
+    <option value="L">Large (L)</option>
+
+    <option value="XL">Extra Large (XL)</option>
+
+    <option value="XXL">2XL</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="13"
+                        data-name=""
+                        data-price="20000"
+                        data-image="img/Instagram.jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+    
+
+    
+
+<div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2
+     text-center min-w-[50%] w-1/2 product-card">
+      <img src="./img/caio-coelho-QRN47la37gw-unsplash.jpg" alt="jeans" class="w-full h-60 object-contain max-w-md md:object-cover
+       md:h-75 
+      mx-auto  rounded-2xl"/>
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦25,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+ <option value="S">Small (S)</option>
+
+    <option value="M">Medium (M)</option>
+
+    <option value="L">Large (L)</option>
+
+    <option value="XL">Extra Large (XL)</option>
+
+    <option value="XXL">2XL</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="14"
+                        data-name=""
+                        data-price="15000"
+                        data-image="img/caio-coelho-QRN47la37gw-unsplash.jpg"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+
+<div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2
+     text-center min-w-[50%] w-1/2 product-card">
+      <img src="./img/download (60).jfif" alt="comfortable shirts"class="w-full h-60   max-w-md md:object-cover md:h-75 object-cover
+      mx-auto  rounded-2xl" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦18,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+     <option value="S">Small (S)</option>
+
+    <option value="M">Medium (M)</option>
+
+    <option value="L">Large (L)</option>
+
+    <option value="XL">Extra Large (XL)</option>
+
+    <option value="XXL">2XL</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="15"
+                        data-name=""
+                        data-price="18000"
+                        data-image="img/download (60).jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+    <div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2
+     text-center min-w-[50%] w-1/2 product-card">
+      <img src="./img/cgxl-media-92_tCTr9rtw-unsplash.jpg" alt="comfortable shirts" class="w-full h-60  max-w-md md:object-cover md:h-75 object-cover
+      mx-auto  rounded-2xl" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦25,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="S">Small (S)</option>
+
+    <option value="M">Medium (M)</option>
+
+    <option value="L">Large (L)</option>
+
+    <option value="XL">Extra Large (XL)</option>
+
+    <option value="XXL">2XL</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="16"
+                        data-name=""
+                        data-price="25000"
+                        data-image="img/cgxl-media-92_tCTr9rtw-unsplash.jpg"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+    </div>
+         </div>
+   
+     <!-- RIGHT ARROW -->
+        <button
+            
+            type="button"
+            class="absolute right-0 top-1/2 -translate-y-1/2
+                   text-5xl  nextBtn
+                   ">
+            ›
+        </button>
+  </div>
+  
+    <div class="sliderIndicators flex justify-center gap-2  mt-6
+    "></div>
+</div>
+ 
+
+
+
+
+  <div class="text-center mb-3 pt-10" id="jean trouser collections">
+  <h1 class="text-2xl bold uppercase"> jean trouser collections</h1>
+  <p class="text-xs text-gray-500">Discover our curated selection of premium wears </p>
+</div>
+<!-----cards-->
+
+<div class="product-slider-section w-full">
+ <div class="max-w-7xl mx-auto px-6 relative">
+    <!-- LEFT ARROW -->
+        <button
+            
+            type="button"
+            class="absolute left-0 top-1/2 -translate-y-1/2
+                   text-5xl text-black prevBtn
+                   ">
+            ‹
+        </button>
+         <div class="overflow-hidden   transition-transform duration-100">
+          <div class="productSlider flex ">
+ <div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2 product-card
+     text-center min-w-[50%] w-1/2">
+      <img src="./img/PRDNC.jfif" alt="comfortable shirts" class="w-full h-60  max-w-md md:object-contain md:h-75 object-cover
+      mx-auto  rounded-2xl" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦25,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="38">38</option>
+
+    <option value="38">39</option>
+
+    <option value="40">40</option>
+
+    <option value="41">41</option>
+
+    <option value="42">42</option>
+     <option value="43">43</option>
+
+    <option value="44">44</option>
+
+    <option value="45">45</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="17"
+                        data-name=""
+                        data-price="25000"
+                        data-image="img/PRDNC.jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+
+    <div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2 product-card
+     text-center min-w-[50%] w-1/2">
+      <img src="./img/download (47).jfif" alt="comfortable shirts" class="w-full h-60  max-w-md md:object-contain md:h-75 object-cover
+      mx-auto  rounded-2xl" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦25,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="38">38</option>
+
+    <option value="38">39</option>
+
+    <option value="40">40</option>
+
+    <option value="41">41</option>
+
+    <option value="42">42</option>
+     <option value="43">43</option>
+
+    <option value="44">44</option>
+
+    <option value="45">45</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="18"
+                        data-name=""
+                        data-price="25000"
+                        data-image="img/download (47).jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+
+<div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2 product-card
+     text-center min-w-[50%] w-1/2">
+      <img src="./img/download (48).jfif" alt="comfortable shirts"class="w-full h-60 max-w-md md:object-contain md:h-75 object-cover
+      mx-auto  rounded-2xl" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦25,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="38">38</option>
+
+    <option value="38">39</option>
+
+    <option value="40">40</option>
+
+    <option value="41">41</option>
+
+    <option value="42">42</option>
+     <option value="43">43</option>
+
+    <option value="44">44</option>
+
+    <option value="45">45</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="19"
+                        data-name=""
+                        data-price="25000"
+                        data-image="img/download (48).jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+    
+
+    
+
+<div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2 product-card
+     text-center min-w-[50%] w-1/2">
+      <img src="./img/download (49).jfif" alt="jeans" class="w-full h-60 max-w-md md:object-contain md:h-75 object-cover
+      mx-auto  rounded-2xl"/>
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦25,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="38">38</option>
+
+    <option value="38">39</option>
+
+    <option value="40">40</option>
+
+    <option value="41">41</option>
+
+    <option value="42">42</option>
+     <option value="43">43</option>
+
+    <option value="44">44</option>
+
+    <option value="45">45</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="20"
+                        data-name=""
+                        data-price="25000"
+                        data-image="img/download (49).jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+
+<div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2 product-card
+     text-center min-w-[50%] w-1/2">
+      <img src="./img/download (50).jfif" alt="comfortable shirts"class="w-full  max-w-md md:object-contain md:h-75 object-cover
+      mx-auto  rounded-2xl" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦25,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="38">38</option>
+
+    <option value="38">39</option>
+
+    <option value="40">40</option>
+
+    <option value="41">41</option>
+
+    <option value="42">42</option>
+     <option value="43">43</option>
+
+    <option value="44">44</option>
+
+    <option value="45">45</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="21"
+                        data-name=""
+                        data-price="25000"
+                        data-image="img/download (50).jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+    <div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2 product-card
+     text-center min-w-[50%] w-1/2">
+      <img src="./img/luxury Stones baggy jeans _price _ 27k 💫 _Whatsapp_ 08034667759.jfif" alt="comfortable shirts"
+       class="w-full h-60  max-w-md md:object-contain md:h-75 object-cover
+      mx-auto  rounded-2xl" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦25,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="38">38</option>
+
+    <option value="38">39</option>
+
+    <option value="40">40</option>
+
+    <option value="41">41</option>
+
+    <option value="42">42</option>
+     <option value="43">43</option>
+
+    <option value="44">44</option>
+
+    <option value="45">45</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="22"
+                        data-name=""
+                        data-price="25000"
+                        data-image="img/luxury Stones baggy jeans _price _ 27k 💫 _Whatsapp_ 08034667759.jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+    <div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2 product-card
+     text-center min-w-[50%] w-1/2">
+      <img src="./img/LUXURY DIFRANSEL BAGGY DENIM JEANS __SIZES 32, 33, 34, 36, 38, 40__PRICE 45,000 NAIRA.jfif" 
+      alt="comfortable shirts" class="w-full  max-w-md md:object-contain md:h-75 object-cover
+      mx-auto  rounded-2xl h-60" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦15,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="38">38</option>
+
+    <option value="38">39</option>
+
+    <option value="40">40</option>
+
+    <option value="41">41</option>
+
+    <option value="42">42</option>
+     <option value="43">43</option>
+
+    <option value="44">44</option>
+
+    <option value="45">45</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="23"
+                        data-name=""
+                        data-price="25000"
+                        data-image="img/LUXURY DIFRANSEL BAGGY DENIM JEANS __SIZES 32, 33, 34, 36, 38, 40__PRICE 45,000 NAIRA.jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+    <div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2 product-card
+     text-center min-w-[50%] w-1/2">
+      <img src="./img/download (52).jfif" class="w-full  max-w-md md:object-contain md:h-75 object-cover
+      mx-auto  rounded-2xl h-60" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦25,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="38">38</option>
+
+    <option value="38">39</option>
+
+    <option value="40">40</option>
+
+    <option value="41">41</option>
+
+    <option value="42">42</option>
+     <option value="43">43</option>
+
+    <option value="44">44</option>
+
+    <option value="45">45</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="24"
+                        data-name=""
+                        data-price="25000"
+                        data-image="img/download (52).jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+    <div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2 product-card
+     text-center min-w-[50%] w-1/2">
+      <img src="./img/Men's Casual Street Cross Print Loose Straight Jogger Pants.jfif" alt="comfortable shirts"
+       class="w-full  max-w-md md:object-contain md:h-75 object-cover
+      mx-auto  rounded-2xl h-60" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦25,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="38">38</option>
+
+    <option value="38">39</option>
+
+    <option value="40">40</option>
+
+    <option value="41">41</option>
+
+    <option value="42">42</option>
+     <option value="43">43</option>
+
+    <option value="44">44</option>
+
+    <option value="45">45</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="25"
+                        data-name=""
+                        data-price="25000"
+                        data-image="img/Men's Casual Street Cross Print Loose Straight Jogger Pants.jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+     <div
+      class="bg-white p-2 rounded-xl shadow-md  hover:shadow-xl slider-product px-2 product-card
+     text-center min-w-[50%] w-1/2">
+      <img src="./img/Wide Denim Pants [Light Blue].jfif" alt="comfortable shirts" class="w-full  max-w-md md:object-contain md:h-75 object-cover
+      mx-auto  rounded-2xl h-60" />
+      <h1 class="text-xl font-bold mb-4 text-gray-800" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      ₦25,000</h1>
+      <div class="space-y-4 pt-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="38">38</option>
+
+    <option value="38">39</option>
+
+    <option value="40">40</option>
+
+    <option value="41">41</option>
+
+    <option value="42">42</option>
+     <option value="43">43</option>
+
+    <option value="44">44</option>
+
+    <option value="45">45</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="26"
+                        data-name=""
+                        data-price="25000"
+                        data-image="img/Wide Denim Pants [Light Blue].jfif"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+    </div>
+         </div>
+   
+     <!-- RIGHT ARROW -->
+        <button
+            
+            type="button"
+            class="absolute right-0 top-1/2 -translate-y-1/2
+                   text-5xl  nextBtn
+                   ">
+            ›
+        </button>
+  </div>
+  
+    <div class="sliderIndicators flex justify-center gap-2  mt-6
+    "></div>
+</div>
+
+
+
+
+
+ 
+
 <!---collections---->
-<div class="text-center mb-3">
-  <h1 class="text-5xl bold">collections</h1>
-  <p>Discover our curated selection of premium footwear </p>
+<div class="text-center mb-3 pt-10" id="footwear collections">
+  <h1 class="text-2xl bold uppercase" > footwear collections</h1>
+  <p class="text-xs text-gray-500">Discover our curated selection of premium footwear </p>
 </div>
 <!------cards---->
-<div class="w-100% mx-auto px-6 py-12">
-  
-  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-    
-    <!-- Card 1 -->
-    <div class="bg-white  hover:shadow-xl  relative overflow-hidden">
+<div  class=" w-full product-slider-section">
+ 
+  <div class="relative  max-w-7xl mx-auto px-6  ">
+     <!-- LEFT ARROW -->
+        <button
+            
+            type="button"
+            class="absolute left-0 top-1/2 -translate-y-1/2
+                   text-5xl text-black prevBtn
+                   ">
+            ‹
+        </button>
+    <div class="overflow-hidden   transition-transform duration-100">
+      <div class="productSlider flex ">
+<!-- Card 1 -->
+    <div class="bg-white  hover:shadow-xl  relative overflow-hidden product-card slider-product px-2
+     text-center min-w-[50%] w-1/2  ">
        <!-- Price badge -->
-      <span class="absolute top- left- bg-black text-white text-sm px-3 py-1 rounded-md shadow">
-        $50
-      </span>
-      <img src="./img/paul-gaudriault-a-QH9MAAVNI-unsplash.jpg" class="w-full h-40 object-cover">
+      
+      <img src="./img/paul-gaudriault-a-QH9MAAVNI-unsplash.jpg" class="w-full  max-w-md md:object-cover md:h-75 object-cover
+      mx-auto  rounded-2xl ">
       
      <h3 class="text-lg text-center font-semibold mb-2">puma tracker</h3>
-        
-        
+     <div class="space-y-4 w-full">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="38">38</option>
+
+    <option value="38">39</option>
+
+    <option value="40">40</option>
+
+    <option value="41">41</option>
+
+    <option value="42">42</option>
+     <option value="43">43</option>
+
+    <option value="44">44</option>
+
+    <option value="45">45</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="puma tracker"
+                        data-name="puma tracker"
+                        data-price="50"
+                        data-image="img/paul-gaudriault-a-QH9MAAVNI-unsplash.jpg"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+ 
     </div>
 
     <!-- Card 2 -->
-    <div class="bg-white  hover:shadow-xl  overflow-hidden">
+    <div class="bg-white  hover:shadow-xl  overflow-hidden product-card slider-product px-2 text-center min-w-[50%] w-1/2   ">
        <!-- Price badge -->
-      <span class="absolute top- left- bg-black text-white text-sm px-3 py-1 rounded-md shadow">
-        $70
-      </span>
-      <img src="./img/ryan-plomp-jvoZ-Aux9aw-unsplash.jpg" class="w-full h-40 object-cover">
+      
+      <img src="./img/ryan-plomp-jvoZ-Aux9aw-unsplash.jpg" class="w-full  max-w-md md:object-cover md:h-75 object-cover
+      mx-auto  rounded-2xl">
      
         <h3 class="text-lg font-semibold mb-2 text-center">Nike Air</h3>
-        
+        <div class="space-y-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="38">38</option>
+
+    <option value="38">39</option>
+
+    <option value="40">40</option>
+
+    <option value="41">41</option>
+
+    <option value="42">42</option>
+     <option value="43">43</option>
+
+    <option value="44">44</option>
+
+    <option value="45">45</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="Nike Air"
+                        data-name="Nike Air"
+                        data-price="70"
+                        data-image="img/ryan-plomp-jvoZ-Aux9aw-unsplash.jpg"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
     </div>
 
     <!-- Card 3 -->
-    <div class="bg-white  hover:shadow-xl overflow-hidden">
+    <div class="bg-white  hover:shadow-xl overflow-hidden product-card slider-product  px-2 text-center min-w-[50%] w-1/2   ">
        <!-- Price badge -->
-      <span class="absolute top- left- bg-black text-white text-sm px-3 py-1 rounded-md shadow">
-        $50
-      </span>
-      <img src="./img/ryan-waring-164_6wVEHfI-unsplash.jpg" class="w-full h-40 object-cover">
+      
+      <img src="./img/ryan-waring-164_6wVEHfI-unsplash.jpg" class="w-full  max-w-md h-50 md:object-cover md:h-75 object-cover
+      mx-auto  rounded-2xl">
       
         <h3 class="text-lg font-semibold mb-2 text-center">jogging nike</h3>
         
-      
+      <div class="space-y-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="38">38</option>
+
+    <option value="38">39</option>
+
+    <option value="40">40</option>
+
+    <option value="41">41</option>
+
+    <option value="42">42</option>
+     <option value="43">43</option>
+
+    <option value="44">44</option>
+
+    <option value="45">45</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="jogging nike"
+                        data-name="jogging nike"
+                        data-price="50"
+                        data-image="img/ryan-waring-164_6wVEHfI-unsplash.jpg"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
     </div>
 
     <!-- Card 4 -->
-    <div class="bg-white  hover:shadow-xl   overflow-hidden">
-       <!-- Price badge -->
-      <span class="absolute top- left- bg-black text-white text-sm px-3 py-1 rounded-md shadow">
-        $30
-      </span>
-      <img src="./img/usama-akram-kP6knT7tjn4-unsplash.jpg" class="w-full h-40 object-cover">
+    <div class="bg-white  hover:shadow-xl   overflow-hidden relative product-card slider-product px-2 text-center min-w-[50%] w-1/2  ">
       
-        <h3 class="text-lg  text-center font-semibold mb-2">Nike shark</h3>
+      
+        <img src="./img/usama-akram-kP6knT7tjn4-unsplash.jpg" class="w-full  max-w-md md:object-cover md:h-75 object-cover
+      mx-auto  rounded-2xl">
+ 
+     
+      
+      
+      
+        <h3 class="text-lg  text-center font-semibold mb-2">Nike shark  </h3>
+        <div class="space-y-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="38">38</option>
+
+    <option value="38">39</option>
+
+    <option value="40">40</option>
+
+    <option value="41">41</option>
+
+    <option value="42">42</option>
+     <option value="43">43</option>
+
+    <option value="44">44</option>
+
+    <option value="45">45</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="Nike shark"
+                        data-name="Nike shark"
+                        data-price="30"
+                        data-image="img/usama-akram-kP6knT7tjn4-unsplash.jpg"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
         
     
     </div>
 
     <!-- Card 5 -->
-    <div class="bg-white  hover:shadow-xl  overflow-hidden">
-       <!-- Price badge -->
-      <span class="absolute top left bg-black text-white text-sm px-3 py-1 rounded-md shadow">
-        $120
-      </span>
-      <img src="./img/xavier-teo-SxAXphIPWeg-unsplash.jpg" class="w-full h-40 object-cover">
+    <div class="bg-white  hover:shadow-xl  overflow-hidden product-card slider-product px-2 text-center min-w-[50%] w-1/2  ">
+     
+      <img src="./img/xavier-teo-SxAXphIPWeg-unsplash.jpg" class="w-full  max-w-md  md:object-cover md:h-75 object-cover
+      mx-auto  rounded-2xl">
       
         <h3 class="text-lg text-center font-semibold mb-2">Air jordan 4</h3>
-        
+        <div class="space-y-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="38">38</option>
+
+    <option value="38">39</option>
+
+    <option value="40">40</option>
+
+    <option value="41">41</option>
+
+    <option value="42">42</option>
+     <option value="43">43</option>
+
+    <option value="44">44</option>
+
+    <option value="45">45</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="Air jordan 4"
+                        data-name="Air jordan 4"
+                        data-price="120"
+                        data-image="img/xavier-teo-SxAXphIPWeg-unsplash.jpg"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
     </div>
+    <!-- Card 5 -->
+    <div class="bg-white  hover:shadow-xl  overflow-hidden product-card slider-product px-2 text-center min-w-[50%] w-1/2 ">
+     
+      <img src="./img/xavier-teo-SxAXphIPWeg-unsplash.jpg" class="w-full  max-w-md md:object-cover md:h-75 object-cover
+      mx-auto  rounded-2xl">
+      
+        <h3 class="text-lg text-center font-semibold mb-2">Air jordan 4</h3>
+        <div class="space-y-4">
+    <select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
 
+                       <option value="">Choose Size</option>
+
+    <option value="38">38</option>
+
+    <option value="38">39</option>
+
+    <option value="40">40</option>
+
+    <option value="41">41</option>
+
+    <option value="42">42</option>
+     <option value="43">43</option>
+
+    <option value="44">44</option>
+
+    <option value="45">45</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="Air jordan 4"
+                        data-name="Air jordan 4"
+                        data-price="120"
+                        data-image="img/xavier-teo-SxAXphIPWeg-unsplash.jpg"
+                    >
+                        Add to Cart
+                    </button>
+     </div>
+    </div>
+      </div>
+ 
+
+    </div>
+   <!-- RIGHT ARROW -->
+        <button
+            
+            type="button"
+            class="absolute right-0 top-1/2 -translate-y-1/2
+                   text-5xl  nextBtn
+                   ">
+            ›
+        </button>
   </div>
+ 
 
+    <div class="sliderIndicators flex justify-center gap-2  mt-6
+    "></div>
 </div>
+
 <!------prcing description-->
-<div class="flex  flex-col md:flex-row items-center justify-center gap-4 mb-5">
+<div class=" pt-10  flex  flex-col md:flex-row items-center justify-center gap-4 mb-5">
 
    <!-- LEFT: Image -->
-<div class="flex-1 p-4 ">
+<div class="flex-1 w-full ">
  
  <div class="relative"> <img
             src="./img/piyush-haswani-gAVIw1zs1fU-unsplash.jpg"
             alt=""
             class="h-full w-full "  
-          />  <h1 class=" absolute top-2 left-6  bg-red-600 text-black text-sm px-2 py-1 rounded-md shadow text-center">
+          />  <h1 class=" absolute top-2 left-0  bg-red-600 text-black text-sm px-2 py-1 rounded-md shadow text-center">
         50% <br>limited time
  </h1></div>
  
@@ -184,45 +2016,93 @@
     
 
     <!-- RIGHT: Content -->
-    <div class="flex-1 p-4">
-      <h1 class="text-5xl font-bold mb-4">NIKE AIR JORDAN 13 <BR>RETRO</h1>
+    <div class="flex-1 bg-gray-100 product-card p-2">
+      <h1 class="text-5xl font-bold mb-4">NIKE AIR JORDAN 13 <br>RETRO</h1>
       <div class="p-6 bg-white">
 
   <!-- Price Row -->
   <div class="flex items-center gap-4">
 
     <!-- Current Price -->
-    <h1 class="text-6xl font-bold text-black">
-      $60
+    <h1 class=" font-bold text-black">
+      ₦40,000
     </h1>
 
     <!-- Old Price -->
     <span
-      class=" text-pink text-3xl font-bold px-4 py-1 rounded-md line-through decoration-4" style="text-decoration: line-through;">
-      $120
+      class=" text-pink  font-bold px-4 py-1 rounded-md line-through decoration-4" style="text-decoration: line-through;">
+      ₦70,000
     </span>
 
   </div>
 
   <!-- Save Text -->
   <p class="mt-4 text-2xl text-gray-500">
-    Save $60 instantly! Stock limited.
+    Save ₦30,000 instantly! Stock limited.
   </p>
 
 </div>
+<div class="space-y-4">
+<select
+                        class="shoe-size w-full max-w-md mx-auto
+                               border-2 border-[#24566a]
+                               p-4  text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+                    >
+
+                       <option value="">Choose Size</option>
+
+    <option value="38">38</option>
+
+    <option value="38">39</option>
+
+    <option value="40">40</option>
+
+    <option value="41">41</option>
+
+    <option value="42">42</option>
+     <option value="43">43</option>
+
+    <option value="44">44</option>
+
+    <option value="45">45</option>
+
+    
+
+                    </select>
+        <button
+                        type="button"
+                        class="add-cart w-full max-w-md
+                               border-2 border-black
+                               py-4 
+                               text-xl
+                               bg-white text-black
+                               dark:bg-black dark:text-white"
+
+                        data-id="NIKE AIR JORDAN 13 RETRO"
+                        data-name="NIKE AIR JORDAN 13 RETRO"
+                        data-price="40000"
+                        data-image="img/piyush-haswani-gAVIw1zs1fU-unsplash.jpg"
+                    >
+                        Add to Cart
+                    </button>
       <button class="bg-black text-white px-6 py-3 rounded-2xl hover:bg-white hover:text-black cursor-pointer">
         GRAB YOURS (ONLY FEW LEFT)
       </button>
+
+</div>
+
     </div>
 
 </div>
 <!------sponsorship-->
-<div class="w-100% mx-auto px-6 py-12 mb-5">
+<div class="max-w-7xl mx-auto px-6 py-12  overflow-hidden flex justify-between space-x-4 shadow-md">
   
-  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+  
     
     <!-- Card 1 -->
-    <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300 relative overflow-hidden">
+    <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300 relative ">
        
      <div class="flex space-x-2">
       <span class="text-2xl font-semibold"><i class="fa-brands fa-suse"></i></span>
@@ -235,7 +2115,7 @@
     </div>
 
     <!-- Card 2 -->
-    <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300  overflow-hidden">
+    <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300  ">
 
       <div class="flex space-x-2">
       <span class="text-2xl font-semibold"><i class="fa-solid fa-file-waveform"></i></span>
@@ -248,7 +2128,7 @@
     </div>
 
     <!-- Card 3 -->
-    <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300 overflow-hidden">
+    <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300 ">
    
       <div class="flex space-x-2">
       <span class="text-2xl font-semibold"><i class="fa-solid fa-stapler"></i></span>
@@ -260,7 +2140,7 @@
     </div>
 
     <!-- Card 4 -->
-    <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300  overflow-hidden">
+    <div class="bg-white transform hover:-translate-x-3 hover:shadow-xl transition duration-300  ">
      
       <div class="flex space-x-2">
       <span class="text-2xl font-semibold"><i class="fa-solid fa-calculator"></i></span>
@@ -283,21 +2163,283 @@
         
     </div>
 
-  </div>
+  
 
 </div>
-<footer class="bg-gray-100 border-t-2 border-gray-400 shadow-2xl ">
+<!------footer-->
+  <footer class="bg-gray-900 text-gray-300">
+    <div class="max-w-7xl mx-auto px-6 py-12">
 
-  <div class="text-center py-6 text-gray-600 font-mono ">
-    @chimnaonuel  2026 Tailwind Project
-  </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
-</footer>
+        <!-- Column 1 -->
+         <!-- Column 1 -->
+        <div class="">
+          <!-- Logo -->
+      <div class="text-xl font-bold text-white"
+       style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+       choice botique
+      </div>
+          <p class="text-sm mb-35">
+            Defining urban fashion through high-<br>performance design.
+          </p>
+          <!-- Bottom bar -->
+          <div class="border-t border-gray-700 mt-10 pt-6 text-sm text-center">
+            © 2026 choice botique fashion house.
+          </div>
+        </div>
 
 
+        <!-- Column 2 -->
+        <div>
+          <h2 class="text-lg font-semibold text-white mb-4">Explore</h2>
+          <ul class="space-y-2 text-sm">
+            
+            <li><a href="./faqs.html" class="hover:text-white">our story</a></li>
+            <li><a href="./faqs.html" class="hover:text-white">faqs</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div>
+          <h2 class="text-lg font-semibold text-white mb-4">social</h2>
+          <ul class="space-y-2 text-sm">
+            <li>  <a href="https://www.linkedin.com/in/emmanuel-adimchinaobi"
+            class="text-xl text-gray-400 text-center "><i class="fa-brands fa-linkedin"></i> linkedin</a></li>
+            <li><a href="https://wa.me/2348169270270" class="text-xl"><i class="fa-brands fa-whatsapp text-green-400"></i> whatsapp</a></li>
+            <li><a href="https://www.instagram.com/adimchinaobi9/?__pwa=1#" class="text-xl">
+            <i class="fa-brands fa-instagram text-pink-500"></i> instagram </a></li>
+            
+          
+          
+          
+          
+          
+          
+      
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div>
+          <h2 class="text-lg font-semibold text-white mb-4">Stay updated</h2>
+
+          <form class="flex mb-35">
+            <input type="email" placeholder="Email address"
+              class="w-full px-3 py-2 rounded-l-md bg-gray-800 text-sm focus:outline-none">
+            <button class="bg-blue-600 px-4 py-2 rounded-r-md text-white text-sm hover:bg-blue-500">
+              subscribe
+            </button>
+          </form>
+          <p>HANDCRAFTED BY chimnaonuel@gmail.com</p>
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+  </footer>
+
+
+<script>
+  
+
+const sliders = document.querySelectorAll(".product-slider-section");
+
+
+sliders.forEach((sliderSection) => {
+
+    const productSlider =
+        sliderSection.querySelector(".productSlider");
+
+    const prevBtn =
+        sliderSection.querySelector(".prevBtn");
+
+    const nextBtn =
+        sliderSection.querySelector(".nextBtn");
+
+    const sliderIndicators =
+        sliderSection.querySelector(".sliderIndicators");
+
+    const sliderProducts =
+        sliderSection.querySelectorAll(".slider-product");
+
+
+    let currentPage = 0;
+
+
+    // HOW MANY PRODUCTS ARE VISIBLE
+    function productsPerPage() {
+
+        if (window.innerWidth < 768) {
+
+            return 2;
+
+        }
+
+        return 2;
+
+    }
+
+
+    // HOW MANY PAGES
+    function totalPages() {
+
+        return Math.ceil(
+            sliderProducts.length / productsPerPage()
+        );
+
+    }
+
+
+    // MOVE SLIDER
+    function updateSlider() {
+
+        const perPage = productsPerPage();
+
+        const percentage =
+            currentPage * 100;
+
+        productSlider.style.transform =
+            `translateX(-${percentage}%)`;
+
+        updateIndicators();
+
+    }
+
+
+    // NEXT
+    nextBtn.addEventListener("click", () => {
+
+        if (currentPage < totalPages() - 1) {
+
+            currentPage++;
+
+            updateSlider();
+
+        }
+
+    });
+
+
+    // PREVIOUS
+    prevBtn.addEventListener("click", () => {
+
+        if (currentPage > 0) {
+
+            currentPage--;
+
+            updateSlider();
+
+        }
+
+    });
+
+
+    // CREATE INDICATORS
+    function createIndicators() {
+
+        sliderIndicators.innerHTML = "";
+
+        const pages = totalPages();
+
+
+        for (let i = 0; i < pages; i++) {
+
+            const handle =
+                document.createElement("button");
+
+            handle.type = "button";
+
+            handle.className =
+                "w-6 h-6 rounded-full";
+
+
+            handle.addEventListener("click", () => {
+
+                currentPage = i;
+
+                updateSlider();
+
+            });
+
+
+            sliderIndicators.appendChild(handle);
+
+        }
+
+
+        updateIndicators();
+
+    }
+
+
+    // ACTIVE INDICATOR
+    function updateIndicators() {
+
+        const handles =
+            sliderIndicators.querySelectorAll("button");
+
+
+        handles.forEach((handle, index) => {
+
+            handle.classList.remove(
+                "bg-pink-300",
+                "bg-gray-300"
+            );
+
+
+            if (index === currentPage) {
+
+                handle.classList.add("bg-pink-300");
+
+            } else {
+
+                handle.classList.add("bg-gray-300");
+
+            }
+
+        });
+
+    }
+
+
+    // RESIZE
+    window.addEventListener("resize", () => {
+
+        const pages = totalPages();
+
+
+        if (currentPage >= pages) {
+
+            currentPage = pages - 1;
+
+        }
+
+
+        createIndicators();
+
+        updateSlider();
+
+    });
+
+
+    // START
+    createIndicators();
+
+    updateSlider();
+
+});
+
+
+</script>
      <script src="./javascript"></script>
 
- 
+ <script src="./cart.js"></script>
+ <script src="./cartcount.js"></script>
+ <script src="./product.js"></script>
 
 
 
