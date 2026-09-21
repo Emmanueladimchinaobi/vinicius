@@ -14,7 +14,8 @@ contactForm.addEventListener("submit", async (e) => {
 
     const email = document.getElementById("email").value.trim();
 
-    const message = document.getElementById("message").value.trim();
+    const message = "New subscriber";
+
 
 
     // Change button text
@@ -77,7 +78,7 @@ contactForm.addEventListener("submit", async (e) => {
     }
 
 
-    sendButton.textContent = "Send Email";
+    sendButton.textContent = "subscribe";
 
     sendButton.disabled = false;
 
