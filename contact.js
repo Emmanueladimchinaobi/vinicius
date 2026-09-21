@@ -19,7 +19,7 @@ contactForm.addEventListener("submit", async (e) => {
 
 
     // Change button text
-    sendButton.textContent = "Sending...";
+    sendButton.textContent = "Subscribing...";
 
     sendButton.disabled = true;
 
@@ -50,17 +50,17 @@ contactForm.addEventListener("submit", async (e) => {
 
         if (response.ok) {
 
-            status.textContent = "Message sent successfully!";
+            status.textContent = "Sent!!!!";
 
-            status.className = "text-center font-medium text-black";
+            status.className = "text-center font-medium text-white";
 
             contactForm.reset();
 
         } else {
 
-            status.textContent = data.message || "Failed to send message.";
+            status.textContent = data.message || "Failed to send.";
 
-            status.className = "text-center font-medium text-red-600";
+            status.className = "text-center font-medium text-white";
 
         }
 
@@ -70,15 +70,15 @@ contactForm.addEventListener("submit", async (e) => {
         console.error(error);
 
         status.textContent =
-            "Unable to send message. Please try again.";
+            "Unable to send. Please try again.";
 
         status.className =
-            "text-center font-medium text-red-600";
+            "text-center font-medium text-white";
 
     }
 
 
-    sendButton.textContent = "subscribe";
+    sendButton.textContent = "send";
 
     sendButton.disabled = false;
 
