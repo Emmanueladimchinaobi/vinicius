@@ -19,7 +19,7 @@ contactForm.addEventListener("submit", async (e) => {
 
 
     // Change button text
-    sendButton.textContent = "Subscribing...";
+    sendButton.textContent = "Sending...";
 
     sendButton.disabled = true;
 
