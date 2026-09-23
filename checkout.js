@@ -45,9 +45,7 @@ cart.forEach(item => {
                 Size: <strong>${item.size}</strong>
             </p>
          
-                <p class="text-gray-500">
-                    Colour: <strong>${item.colour}</strong>
-                </p>
+               
             <p class="text-gray-500">
                 Quantity: ${item.quantity}
             </p>
